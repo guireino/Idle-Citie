@@ -41,6 +41,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Build
+    uniqueID: 2442131323
+    locked: 0
   - name: Hud
     uniqueID: 3103345215
     locked: 0
