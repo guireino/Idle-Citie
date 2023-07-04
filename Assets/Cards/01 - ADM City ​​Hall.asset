@@ -17,9 +17,9 @@ MonoBehaviour:
   spriteCardDisable: {fileID: 21300000, guid: 27d7d6fa7b668354891e35034635367b, type: 3}
   rarity: 2
   production: 1
-  timeProduction: 0.8
-  reducerTimeProduction: 1
-  multiplexed: 1
+  timeProduction: 1
+  timeReducerProduct: 1
+  multiplexed: 2
   cardLevel: 1
   cardCollected: 0
   isReleasedStaring: 1

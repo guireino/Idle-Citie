@@ -239,7 +239,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &249648890
 Transform:
   m_ObjectHideFlags: 0
@@ -1330,6 +1330,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39113f5e3a4c1163696863e0ecfbaa84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _slotGame: {fileID: 11400000, guid: 872e804f1eb28e13bad67fc77753739b, type: 2}
   baseHud: {fileID: 536200863}
   hudPosition: {fileID: 2009627925}
   hudActive: {fileID: 249648889}
@@ -1610,8 +1611,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.5, y: -7}
-  m_SizeDelta: {x: 100, y: 10}
+  m_AnchoredPosition: {x: 0.5, y: -9}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1507594792
 MonoBehaviour:
@@ -1696,7 +1697,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 49.61753, y: 0, z: 50.152557, w: -5.10523}
+  m_margin: {x: 45.81708, y: 47.92569, z: 45.90359, w: 45.685265}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1967,7 +1968,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2024348781
 Transform:
   m_ObjectHideFlags: 0

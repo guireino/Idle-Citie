@@ -4,8 +4,12 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-
 public class slotController : MonoBehaviour{
+
+    private float tempTime, fillAmount;
+    private double goldProduced;
+
+    public slotGame _slotGame;
 
     public GameObject baseHud;
     public Transform hudPosition;
@@ -34,10 +38,42 @@ public class slotController : MonoBehaviour{
     // Start is called before the first frame update
     void Start(){
         baseHud.transform.position = hudPosition.position;
+
+        _slotGame.initializedSlotGame();
     }
 
     // Update is called once per frame
     void Update(){
-        
+
+        if(goldProduced == 0){
+            production();
+        }else if(goldProduced > 0 && _slotGame.isAutoProduction == true){
+            production();
+        }
     }
+
+    void production(){
+
+        tempTime += Time.deltaTime;
+
+        //fazendo porcetangem bar progreso
+        fillAmount = tempTime / _slotGame.timeProduct;
+
+        loadProduction.fillAmount = fillAmount;
+
+        if(tempTime >= _slotGame.timeProduct){
+
+            tempTime = 0;
+            goldProduced += _slotGame.production;
+
+            txtProduction.text = goldProduced.ToString();
+        }
+
+        if(goldProduced > 0){
+            iconCoin.SetActive(true);
+        }else{
+            iconCoin.SetActive(false);
+        }
+    }
+
 }

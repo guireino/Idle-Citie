@@ -20,13 +20,12 @@ public class card : ScriptableObject{
     public float timeProduction;
 
     [Header("Data Staring")]
-    public float reducerTimeProduction = 1;
+    public float timeReducerProduct = 1;
     public int multiplexed = 1;
     public int cardLevel = 1;
     public int cardCollected = 0;
     public bool isReleasedStaring;
     public bool isReleased;
-
 
     // Start is called before the first frame update
     void Start(){
@@ -41,7 +40,7 @@ public class card : ScriptableObject{
     public void resetCard(){
         isReleased = isReleasedStaring;
         multiplexed = 1;
-        reducerTimeProduction = 1;
+        timeReducerProduct = 1;
         cardLevel = 1;
         cardCollected = 0;
     }
